@@ -1,9 +1,9 @@
-import { Button } from "./components/ui/button";
+import Navbar from "./components/navbar";
 
 function App() {
   return (
     <div>
-      <Button>Hello</Button>
+      <Navbar />
     </div>
   );
 }
