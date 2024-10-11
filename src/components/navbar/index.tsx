@@ -13,8 +13,11 @@ import {
 import { Separator } from "@/components/ui/separator";
 import {
   AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
   AlertDialogContent,
   AlertDialogDescription,
+  AlertDialogFooter,
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
@@ -45,12 +48,17 @@ const Navbar: FC = () => {
               <AlertDialogHeader>
                 <AlertDialogTitle>Want to search books?</AlertDialogTitle>
                 <AlertDialogDescription>
-                  <div className="flex w-full items-center space-x-2">
-                    <Input type="search" placeholder="search" />
-                    <Button>Search</Button>
-                  </div>
+                  <Input
+                    type="search"
+                    className="w-full"
+                    placeholder="Search"
+                  />
                 </AlertDialogDescription>
               </AlertDialogHeader>
+              <AlertDialogFooter>
+                <AlertDialogCancel>Cancel</AlertDialogCancel>
+                <AlertDialogAction>Search</AlertDialogAction>
+              </AlertDialogFooter>
             </AlertDialogContent>
           </AlertDialog>
           <DropdownMenu>
@@ -75,13 +83,13 @@ const Navbar: FC = () => {
           <Button className="pb-0" variant={"link"}>
             +998777771565
           </Button>
-          <Button className="pb-0" variant={"outline"}>
+          <Button variant={"outline"}>
             <Facebook />
           </Button>
-          <Button className="pb-0" variant={"outline"}>
+          <Button variant={"outline"}>
             <Instagram />
           </Button>
-          <Button className="pb-0" variant={"outline"}>
+          <Button variant={"outline"}>
             <Twitter />
           </Button>
         </div>
