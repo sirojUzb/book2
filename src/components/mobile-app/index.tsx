@@ -40,7 +40,7 @@ const MobileApp = () => {
           <img
             src="/images/book_mobile.png"
             alt="book mobile"
-            className="w-[300px] h-[96%] absolute right-[110px] top-4"
+            className="w-[300px] h-[96%] absolute right-[110px] top-[18px]"
           />
         </div>
       </div>
